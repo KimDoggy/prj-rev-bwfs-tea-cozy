@@ -1,0 +1,149 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  width: 100%;
+  background: black;
+  z-index: 5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+.logo {
+    /*border: 2px solid white;*/
+    padding-left: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+#mission {
+  /*border: 2px solid white;*/
+  position: relative;
+  top: 69px;
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/mission.jpg);
+}
+
+#mission .mission-text {
+  /*border: 2px solid red;*/
+  width: 1200px;
+  background-color: black;
+}
+
+#featured-tea {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 70px;
+}
+
+.images-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tea-pic {
+  height: 200px;
+  width: 300px;
+}
+
+.pic-one {
+  margin-right: 15px;
+}
+
+.pic-two {
+  margin: 0 15px;
+}
+
+.pic-three {
+  margin-left: 15px;
+}
+
+.pic-four {
+  margin-right: 15px;
+}
+
+.pic-five {
+  margin-left: 15px;
+}
+
+.tea-name {
+  margin-top: 10px;
+}
+
+#location {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 70px;
+  background-image: url(images/location.jpg);
+  height: 500px;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  /*border: 2px solid green;*/
+}
+
+#location h2 {
+  margin-bottom: 10px;
+}
+
+.locations-list {
+  display: flex;
+  margin-top: 5px;
+}
+
+.address {
+  background-color: black;
+  width: 300px;
+  opacity: 1;
+}
+
+.location-two {
+  margin: 0 40px;
+}
+
+.contact {
+  position: relative;
+  top: 70px;
+  height: 200px;
+}
+
+footer {
+  position: relative;
+  top: 70px;
+  text-align: left;
+  padding-left: 20px;
+}
