@@ -12,12 +12,11 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 69px;
   border-bottom: 1px solid seashell;
   position: fixed;
   width: 100%;
-  background: black;
+  background-color: black;
   z-index: 5;
 }
 
@@ -25,17 +24,20 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 69px;
 }
 
-header nav a {
-  color: white;
+nav span a {
+  color: seashell;
+}
+
+nav span {
   padding: 10px;
-  text-decoration: underline;
 }
 
 .logo {
-    /*border: 2px solid white;*/
     padding-left: 10px;
+    margin-right: auto;
 }
 
 .logo img {
@@ -43,9 +45,6 @@ header nav a {
 }
 
 #mission {
-  /*border: 2px solid white;*/
-  position: relative;
-  top: 69px;
   width: 1200px;
   height: 700px;
   display: flex;
@@ -55,7 +54,6 @@ header nav a {
 }
 
 #mission .mission-text {
-  /*border: 2px solid red;*/
   width: 1200px;
   background-color: black;
 }
@@ -64,8 +62,12 @@ header nav a {
   width: 1000px;
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 70px;
+  padding-top: 70px;
+}
+
+#featured-tea h2, #featured-tea p {
+  margin: 0;
+  padding: 10px;
 }
 
 .images-content {
@@ -77,43 +79,26 @@ header nav a {
 .tea-pic {
   height: 200px;
   width: 300px;
+  margin: 10px;
 }
 
-.pic-one {
-  margin-right: 15px;
-}
-
-.pic-two {
-  margin: 0 15px;
-}
-
-.pic-three {
-  margin-left: 15px;
-}
-
-.pic-four {
-  margin-right: 15px;
-}
-
-.pic-five {
-  margin-left: 15px;
+.pic-distance {
+  padding: 5px;
 }
 
 .tea-name {
-  margin-top: 10px;
+  margin: 0;
 }
 
 #location {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 70px;
   background-image: url(images/location.jpg);
   height: 500px;
   width: 1200px;
   justify-content: center;
   align-items: center;
-  /*border: 2px solid green;*/
+  margin-top: 70px;
 }
 
 #location h2 {
@@ -136,14 +121,15 @@ header nav a {
 }
 
 .contact {
-  position: relative;
-  top: 70px;
   height: 200px;
 }
 
+.contact h2 {
+  margin: 0;
+  padding: 10px;
+}
+
 footer {
-  position: relative;
-  top: 70px;
   text-align: left;
   padding-left: 20px;
 }
